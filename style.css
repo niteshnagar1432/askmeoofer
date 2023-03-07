@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.main .nav {
+    width: 100vw;
+    height: 12vh;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.main .nav>a {
+    cursor: pointer;
+    float: left;
+    font-size: 1.75pc;
+    margin-top: 0.5pc;
+    margin-top: 0.5pc;
+    width: 2.5%;
+    color: #d63b82;
+    outline: none;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.main .nav .inputBox input {
+    padding: 12px 60px;
+    /* max-width: 100%; */
+    border: 1px solid #e9e9e9;
+    /* padding: 10px 15px; */
+    border-radius: 2px;
+    font-family: "Open Sans", sans-serif;
+    /* width: 100%; */
+    border: none;
+    float: left;
+    box-shadow: 0.5px 0.9px 6.7px 0.3px rgb(0 0 0 / 25%);
+}
+
+.main .nav .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.main .nav .menu-container>a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.main .nav button {
+    background: #ad1457;
+    border: none;
+    padding: 0.5pc;
+    color: #fff;
+    font-size: 1pc;
+    font-weight: 500;
+    float: right;
+    margin-right: 0.35pc;
+    width: 9pc;
+    height: 2.5pc;
+}
+
+.main>img {
+    width: 100%;
+    height: calc(100vh-12vh);
+    object-fit: cover;
+}
+
+.section-2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.main .upper {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    /* background-color: black; */
+    color: #FFFFFF;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.main .upper h3 {
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    line-height: 52px;
+    clear: both;
+    font-family: "Open Sans", sans-serif;
+    max-width: 50%;
+}
+
+.main .upper .serchDiv {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 40px;
+}
+
+.main .upper .serchDiv input {
+    padding: 8.3px 130px;
+    margin-top: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #e9e9e9;
+    border: none;
+    outline: none;
+}
+
+.main .upper .serchDiv button {
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    margin-top: 9px !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #1dbf73;
+    color: #e9e9e9;
+}
+
+.main .upper .popular-box {
+    display: flex;
+    gap: 20px;
+}
+
+.main .upper .popular-box ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+}
+
+.main .upper .popular-box ul li {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #e9e9e9;
+    border-radius: 30px;
+}
+
+.popUp {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0;
+    overflow-x: hidden;
+    display: none;
+}
+
+.popUp .container {
+    width: 100%;
+    height: auto;
+    /* background-color: #1dbf73; */
+    position: relative;
+}
+
+.popUp .container>.close {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    font-size: 32px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.popUp .container>p {
+    position: absolute;
+    right: 0;
+    top: 12%;
+}
+
+.popUp .container>.close:hover {
+    color: #1dbf73;
+}
+
+.popUp .container input {
+    width: 100%;
+    height: 10%;
+    font-size: 42px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(53, 51, 51);
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+
+.popUp .container .company {
+    padding: 0px 20px;
+}
+
+.popUp .container .company>h3 {
+    font-size: 18px;
+    color: rgb(53, 51, 51);
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 30px;
+}
+
+.popUp .container .company .c {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.popUp .container .company .c a {
+    padding: 10px 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(111, 105, 105);
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 186, 186);
+}
+
